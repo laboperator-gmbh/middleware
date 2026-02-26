@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@types/node": "^25.3.1",
-    "@types/supertest": "^6.0.3",
+    "@types/supertest": "^7.2.0",
     "eslint": "^8.57.1",
     "fetch-mock": "^9.11.0",
     "middleware-development": "laboperator-gmbh/middleware-development",
