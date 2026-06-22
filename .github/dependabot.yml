@@ -8,16 +8,12 @@ updates:
       timezone: 'Europe/Berlin'
     rebase-strategy: disabled
     ignore:
-      # Need to wait until every plugin support eslint 9
-      #
-      # It also dropped support for .eslintrc file in favor of flat config
-      # Which means that we might need to completely rewrite/restructure our config
-      #
-      # ref: https://eslint.org/docs/latest/use/configure/migration-guide
-      #
+      - dependency-name: '@babel/*'
+        versions:
+          - '>= 8'
       - dependency-name: eslint
         versions:
-          - '>= 9'
+          - '>= 10'
       # Newer version get stuck when running with supertest in CircleCI
       - dependency-name: fetch-mock
         versions:
