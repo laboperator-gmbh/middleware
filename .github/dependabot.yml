@@ -11,9 +11,12 @@ updates:
       - dependency-name: '@babel/*'
         versions:
           - '>= 8'
+      - dependency-name: '@types/node'
+        versions:
+          - '>= 25'
       - dependency-name: eslint
         versions:
-          - '>= 10'
+          - '>= 9'
       # Newer version get stuck when running with supertest in CircleCI
       - dependency-name: fetch-mock
         versions:
